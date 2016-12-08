@@ -48,13 +48,40 @@ span.symbol{
     font-size: 32px;
 }
 
+
+.nav{
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    position: fixed;
+    padding: 2%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.85);
+}
+
+.nav img{
+    width: 30px;
+    height; auto;
+}
+
+.nav a{
+    font-size: 11px;
+    height: 100%;
+    color: #fbe3ed;
+    margin: 2%;
+    text-decoration: none;
+}
+
+
 div.title{
     min-width: 350px;
 }
 
 .headline{
     margin: 10%;
-    max-width: 900px;
     text-align: center;
 }
 
@@ -126,7 +153,7 @@ div.intro, div.goals{
 
 div.problem, div.different{
     background-color: #120c12;
-    color: #d43432;
+    color: #fbe3ed;
 }
 
 
@@ -135,6 +162,8 @@ div.problem, div.different{
     max-width: 400px;
     padding: 6%;
 }
+
+
 
 /*
 .person{
@@ -173,7 +202,7 @@ div.problem, div.different{
     z-index: 101;
     height: 20px;
     width: 20px;
-    background-color:#788188
+    background-color:#788188;
     cursor: pointer;
 }
 
@@ -229,23 +258,82 @@ label[for="g"]{
 
 .bFly{
     width: 20%;
-    max-width: 180px;
     height: auto;
     display: inline;
     margin: 2%;
+    margin-bottom: 0;
     
 }
 
-.rules2{
+
+.keepsingle{
+    box-sizing: border-box;
+    width: 20%;
+    height: auto;
+    margin: 2%;
+    margin-top: 0;
+    display: inline-block;
     text-align: center;
+    color: #120c12;
+    padding: 2%;
+    border-radius: 14px;
+
 }
+
 
 
 @media(min-width: 600px){
     
+    
+    
     h3{
         line-height: 56px;
         font-size: 52px;
+    }
+    
+    div.section{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    div.title, div.company{
+        clear: both;
+        margin: 0;
+    }
+
+}
+
+
+@media(min-width: 1350px){
+    
+    .nav a{
+        font-size: 16px;
+        padding: 2%;
+    }
+    
+    .nav a:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+    
+    div.intro, div.problem, div.solution{
+        width: 15%;
+        height: auto;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top:6%;
+        display: inline-block;
+    }
+    
+    .intro{
+        float: left;
+    }
+    
+    .solution{
+        float: right;
+    }
+    
+    div.intro h3, div.problem h3, div.solution h3{
+        font-size: 18px;
     }
 }
 
